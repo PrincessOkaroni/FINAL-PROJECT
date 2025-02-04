@@ -49,6 +49,22 @@
       <h3>View Marks</h3>
       <button onclick="viewMarks()">View CAT and Exam Marks</button>
     </section>
+    <section id="report-missing-marks">
+      <h3>Report Missing Marks</h3>
+      <form action="/report-missing-marks" method="post">
+        <label for="unit-code">Unit Code:</label>
+        <input type="text" id="unit-code" name="unit-code" required />
+        <label for="unit-name">Unit Name:</label>
+        <input type="text" id="unit-name" name="unit-name" required />
+        <label for="lecturer">Lecturer:</label>
+        <input type="text" id="lecturer" name="lecturer" required />
+        <label for="academic-year">Academic Year:</label>
+        <input type="text" id="academic-year" name="academic-year" required />
+        <label for="semester">Semester:</label>
+        <input type="text" id="semester" name="semester" required />
+        <button type="submit">Report</button>
+      </form>
+    </section>
 
     <script src="./script/script.js"></script>
   </body>
