@@ -13,6 +13,7 @@
         <li><a href="student.html">student</a></li>
         <li><a href="lecturer.html">Lecturer</a></li>
         <li><a href="admin.html">Admin</a></li>
+        <li><a href="#notification">Notifications</a></li>
       </ul>
     </header>
     <section id="student-auth">
@@ -39,14 +40,18 @@
             <option number="Two">Two</option>
           </select>
           <button type="submit">Sign Up</button>
+          <div class="login-link">
+            Already have an account? <a href="#">Log in</a>
+          </div>
         </form>
-        <div class="login-link">
-          Already have an account? <a href="#">Log in</a>
-        </div>
       </div>
     </section>
     <section id="marks">
       <h3>View Marks</h3>
+      <p>Check your Continuous Assessment Test (CAT) and Exam marks below.</p>
+      <div class="marks-container">
+        <!-- Content for marks will be dynamically inserted here -->
+      </div>
       <button onclick="viewMarks()">View CAT and Exam Marks</button>
     </section>
     <section id="report-missing-marks">
@@ -65,17 +70,9 @@
         <button type="submit">Report</button>
       </form>
     </section>
-    section id="notifications">
-        <h3>Notifications</h3>
-        <div id="notification-list">
-          <!-- Notifications will be dynamically loaded here -->
-        </div>
-      </section>
-    </main>
     <footer>
       <p>&copy; 2025 Campus GradePulse. All rights reserved.</p>
     </footer>
-
     <script src="./script/script.js"></script>
   </body>
 </html>
