@@ -235,3 +235,14 @@ footer ul li a:hover {
   cursor: pointer;
   color: orange;
 }
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  header ul {
+    flex-direction: column;
+  }
+
+  footer ul {
+    flex-direction: column;
+  }
+}
