@@ -15,6 +15,37 @@
         <li><a href="admin.html">Admin</a></li>
       </ul>
     </header>
+    <section id="student-auth">
+      <h2>Student Portal</h2>
+      <div class="signup-container">
+        <h2>Sign Up</h2>
+        <form id="signup-form">
+          <input
+            type="number"
+            id="Admission Number"
+            placeholder="Admission-Number"
+            required
+          />
+          <input type="number" id="Password" placeholder="Password" required />
+          <input
+            type="number"
+            id="Academic Year"
+            placeholder="academic-year"
+            required
+          />
+          <select id="Semester" required>
+            <option number="" disabled selected>Select semester</option>
+            <option number="one">One</option>
+            <option number="Two">Two</option>
+          </select>
+          <button type="submit">Sign Up</button>
+        </form>
+        <div class="login-link">
+          Already have an account? <a href="#">Log in</a>
+        </div>
+      </div>
+    </section>
+
     <script src="./script/script.js"></script>
   </body>
 </html>
