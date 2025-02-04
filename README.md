@@ -33,3 +33,4 @@ For any inquiries or feedback, please contact me at "nekesapurity20@gmail.com"
 ## License
 
 This project is licensed under the MIT License.
+&copy; 2025 Campus GradePulse. All rights reserved.
