@@ -14,3 +14,8 @@ Purity Nekesa
    ```bash
    git clone https://github.com/PrincessOkaroni/FINAL-PROJECT
    ```
+
+## BDD (Behavior Driven Development)
+
+As a user, I want to input my unit code, unit name, lecturer, academic year, and semester so that I can keep track of my academic information to prevent missing marks cases.
+As a user, I want to see notifications dynamically loaded in the notifications section .
