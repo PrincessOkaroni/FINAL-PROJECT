@@ -40,3 +40,22 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
+
+    if (marksForm) {
+    marksForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const inputs = marksForm.querySelectorAll("input");
+      if (validateForm(inputs)) {
+        const marksData = getFromLocalStorage("marks") || [];
+        const newMark = {
+          studentId: inputs[0].value,
+          courseCode: inputs[1].value,
+          marks: inputs[2].value,
+        };
+        marksData.push(newMark);
+        saveToLocalStorage("marks", marksData);
+        alert("Marks uploaded successfully!");
+        marksForm.reset();
+      }
+    });
+  }
