@@ -18,6 +18,12 @@
     </header>
     <section id="student-auth">
       <h2>Student Portal</h2>
+      <p>
+        Welcome to the student portal. Here you can sign up, view your marks,
+        and report any missing marks. If you have any missing marks, please fill
+        out the form below to report them. Our team will review your submission
+        and get back to you as soon as possible.
+      </p>
       <div class="signup-container">
         <h2>Sign Up</h2>
         <form id="signup-form">
@@ -63,10 +69,19 @@
         <input type="text" id="unit-name" name="unit-name" required />
         <label for="lecturer">Lecturer:</label>
         <input type="text" id="lecturer" name="lecturer" required />
-        <label for="academic-year">Academic Year:</label>
-        <input type="text" id="academic-year" name="academic-year" required />
-        <label for="semester">Semester:</label>
-        <input type="text" id="semester" name="semester" required />
+        <select id="report-academic-year" required>
+          <option value="" disabled selected>Select academic-year</option>
+          <option value="2020-2021">2020-2021</option>
+          <option value="2021-2022">2021-2022</option>
+          <option value="2022-2023">2022-2023</option>
+          <option value="2023-2024">2023-2024</option>
+          <option value="2024-2025">2024-2025</option>
+        </select>
+        <select id="report-semester" required>
+          <option value="" disabled selected>Select semester</option>
+          <option value="one">One</option>
+          <option value="Two">Two</option>
+        </select>
         <button type="submit">Report</button>
       </form>
     </section>

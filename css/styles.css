@@ -90,6 +90,79 @@ ul li {
   margin: 0.5rem 0;
 }
 
+#student-auth {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+#student-auth h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#student-auth p {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.signup-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.signup-container h2 {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.signup-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-container input,
+.signup-container select,
+.signup-container button {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.signup-container button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.signup-container button:hover {
+  background-color: #0056b3;
+}
+
+.login-link {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.login-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -135,31 +208,97 @@ form button:hover {
 
 #marks {
   background-color: #f9f9f9;
-  padding: 2rem;
+  padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-bottom: 2rem;
-  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 600px;
 }
 
 #marks h3 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
   color: #333;
+  font-size: 22px;
+  margin-bottom: 10px;
 }
 
 #marks p {
-  color: #333;
-  text-align: center;
-  font-size: large;
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 15px;
 }
 
 .marks-container {
   background-color: #fff;
-  padding: 1rem;
+  padding: 15px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 1rem;
+  margin-bottom: 20px;
+}
+
+#marks button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#marks button:hover {
+  background-color: #0056b3;
+  cursor: pointer;
+  color: aliceblue;
+}
+
+#report-missing-marks {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+#report-missing-marks h3 {
+  color: #333;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+#report-missing-marks p {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+#report-missing-marks form {
+  display: flex;
+  flex-direction: column;
+}
+
+#report-missing-marks label {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+#report-missing-marks input,
+#report-missing-marks select,
+#report-missing-marks button {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#report-missing-marks button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#report-missing-marks button:hover {
+  background-color: #0056b3;
 }
 
 .admin-actions {
