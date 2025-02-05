@@ -68,4 +68,16 @@ document.addEventListener("DOMContentLoaded", function () {
       markElement.textContent = `Unit: ${mark.unitName}, Marks: ${mark.marks}`;
       marksContainer.appendChild(markElement);
     });
+    };
+    
+    window.overseeRecords = function () {
+    const records = getFromLocalStorage("marks") || [];
+    console.log("Overseeing Records:", records);
+    alert("Check console for records.");
+  };
+
+  window.manageUserAccounts = function () {
+    const studentData = getFromLocalStorage("studentData");
+    console.log("Managing User Accounts:", studentData);
+    alert("Check console for user accounts.");
   };
