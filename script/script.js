@@ -58,4 +58,14 @@ document.addEventListener("DOMContentLoaded", function () {
         marksForm.reset();
       }
     });
-  }
+    }
+    
+    window.viewMarks = function () {
+    const marks = getFromLocalStorage("marks") || [];
+    marksContainer.innerHTML = "";
+    marks.forEach((mark) => {
+      const markElement = document.createElement("div");
+      markElement.textContent = `Unit: ${mark.unitName}, Marks: ${mark.marks}`;
+      marksContainer.appendChild(markElement);
+    });
+  };
