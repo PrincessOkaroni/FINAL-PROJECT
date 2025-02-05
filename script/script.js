@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-    if (marksForm) {
+  if (marksForm) {
     marksForm.addEventListener("submit", function (e) {
       e.preventDefault();
       const inputs = marksForm.querySelectorAll("input");
@@ -58,9 +58,9 @@ document.addEventListener("DOMContentLoaded", function () {
         marksForm.reset();
       }
     });
-    }
-    
-    window.viewMarks = function () {
+  }
+
+  window.viewMarks = function () {
     const marks = getFromLocalStorage("marks") || [];
     marksContainer.innerHTML = "";
     marks.forEach((mark) => {
@@ -68,9 +68,9 @@ document.addEventListener("DOMContentLoaded", function () {
       markElement.textContent = `Unit: ${mark.unitName}, Marks: ${mark.marks}`;
       marksContainer.appendChild(markElement);
     });
-    };
-    
-    window.overseeRecords = function () {
+  };
+
+  window.overseeRecords = function () {
     const records = getFromLocalStorage("marks") || [];
     console.log("Overseeing Records:", records);
     alert("Check console for records.");
@@ -81,3 +81,8 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("Managing User Accounts:", studentData);
     alert("Check console for user accounts.");
   };
+
+  window.sendNotifications = function () {
+    alert("Notifications sent!");
+  };
+});
