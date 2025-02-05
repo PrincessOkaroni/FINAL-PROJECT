@@ -15,3 +15,28 @@ function validateForm(inputs) {
   }
   return true;
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const signupForm = document.getElementById("signup-form");
+  const marksContainer = document.querySelector(".marks-container");
+  const marksForm = document.getElementById("marks-form");
+
+  if (signupForm) {
+    signupForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const inputs = signupForm.querySelectorAll("input, select");
+      if (validateForm(inputs)) {
+        const studentData = {
+          admissionNumber: inputs[0].textContent,
+          number,
+          password: inputs[1].textContent,
+          number,
+          academicYear: inputs[2].value,
+          semester: inputs[3].value,
+        };
+        saveToLocalStorage("studentData", studentData);
+        alert("Sign up successful!");
+        signupForm.reset();
+      }
+    });
+  }
